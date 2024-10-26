@@ -7,8 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.example.studentstresslevelpredictor.student_form_screen.StudentFormScreen
-import com.example.studentstresslevelpredictor.ui.theme.StudentStressLevelPredictorTheme
+import com.example.studentstresslevelpredictor.presentation.student_form_screen.StudentFormScreen
+import com.example.studentstresslevelpredictor.presentation.theme.StudentStressLevelPredictorTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

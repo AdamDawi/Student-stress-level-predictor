@@ -1,4 +1,4 @@
-package com.example.studentstresslevelpredictor
+package com.example.studentstresslevelpredictor.presentation.model
 
 import android.content.Context
 import org.tensorflow.lite.Interpreter

@@ -1,4 +1,4 @@
-package com.example.studentstresslevelpredictor.ui.theme
+package com.example.studentstresslevelpredictor.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

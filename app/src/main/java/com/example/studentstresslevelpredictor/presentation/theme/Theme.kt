@@ -1,9 +1,8 @@
-package com.example.studentstresslevelpredictor.ui.theme
+package com.example.studentstresslevelpredictor.presentation.theme
 
-import android.R
+import android.R.color
 import android.app.Activity
 import android.os.Build
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
@@ -57,7 +56,7 @@ fun StudentStressLevelPredictorTheme(
     val view = LocalView.current
     val window = ((view.context) as Activity).window
     //status bar and navigation colors
-    window.decorView.setBackgroundResource(R.color.black)
+    window.decorView.setBackgroundResource(color.black)
     window.statusBarColor = Color.Black.toArgb()
     window.navigationBarColor = Color.Black.compositeOver(colorScheme.surface.copy()).toArgb()
 

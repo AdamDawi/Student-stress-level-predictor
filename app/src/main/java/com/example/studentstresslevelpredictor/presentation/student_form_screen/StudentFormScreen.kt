@@ -1,4 +1,4 @@
-package com.example.studentstresslevelpredictor.student_form_screen
+package com.example.studentstresslevelpredictor.presentation.student_form_screen
 
 import android.util.Log
 import androidx.compose.foundation.background
@@ -37,8 +37,8 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.studentstresslevelpredictor.PredictionModel
-import com.example.studentstresslevelpredictor.ui.theme.StudentStressLevelPredictorTheme
+import com.example.studentstresslevelpredictor.presentation.model.PredictionModel
+import com.example.studentstresslevelpredictor.presentation.theme.StudentStressLevelPredictorTheme
 
 @Composable
 fun StudentFormScreen(
@@ -82,7 +82,7 @@ fun StudentDataForm(
         item {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
+                verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(
@@ -91,7 +91,6 @@ fun StudentDataForm(
                     color = Color.White,
                     fontWeight = FontWeight.Bold
                 )
-                Spacer(modifier = Modifier.height(16.dp))
                 Row {
                     Text(
                         text = "Give answers in a scale of ",
@@ -105,7 +104,6 @@ fun StudentDataForm(
                         fontWeight = FontWeight.Bold
                     )
                 }
-                Spacer(modifier = Modifier.height(16.dp))
                 InputTextField(
                     label = "Rate your Sleep Quality \uD83D\uDE34",
                     value = sleepQuality,
@@ -145,7 +143,7 @@ fun StudentDataForm(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
-                Spacer(modifier = Modifier.height(48.dp))
+                Spacer(modifier = Modifier.height(32.dp))
                 Text(
                     text = "Your stress level: ${
                         (prediction.value?.indices?.maxByOrNull { prediction.value!![it] }
